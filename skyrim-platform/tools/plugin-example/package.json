@@ -2,10 +2,12 @@
   "name": "skyrimplatform-plugin-example",
   "version": "1.0.0",
   "description": "My plugin's description",
-  "scripts": {},
-  "keywords": [],
-  "author": "My Name <my.name@example.org>",
-  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "build:watch": "webpack",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
   "dependencies": {
     "@types/skyrimPlatform": "https://github.com/skyrim-types/skyrimPlatform.git"
   },
